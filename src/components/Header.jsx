@@ -112,7 +112,7 @@ const Header = () => {
                         </div>
 
                         <button
-                            onClick={() => scrollToSection('contact')}
+                            onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSerSnWp4zdUKhZDqv_hK7muhKeebb7SHb2kR0oUVNJewElGjQ/viewform?usp=dialog', '_blank')}
                             className="btn-primary"
                         >
                             Get Started
@@ -174,7 +174,7 @@ const Header = () => {
                             </div>
 
                             <button
-                                onClick={() => scrollToSection('contact')}
+                                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSerSnWp4zdUKhZDqv_hK7muhKeebb7SHb2kR0oUVNJewElGjQ/viewform?usp=dialog', '_blank')}
                                 className="btn-primary mt-2"
                             >
                                 Get Started

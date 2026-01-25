@@ -40,9 +40,12 @@ const ServiceDetail = () => {
                     <h1 className="text-4xl md:text-5xl font-semibold mb-6">{service.title}</h1>
                     <p className="text-xl text-blue-50 max-w-3xl mb-8">{service.fullDescription || service.description}</p>
 
-                    <Link to="/#contact" className="btn-primary bg-white text-blue-600 hover:bg-blue-50">
+                    <button 
+                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSerSnWp4zdUKhZDqv_hK7muhKeebb7SHb2kR0oUVNJewElGjQ/viewform?usp=dialog', '_blank')}
+                        className="btn-primary bg-white text-blue-600 hover:bg-blue-50"
+                    >
                         Get Started Now
-                    </Link>
+                    </button>
                 </div>
             </section>
 

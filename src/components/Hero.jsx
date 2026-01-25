@@ -62,7 +62,7 @@ const Hero = () => {
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center mb-10 sm:mb-14 md:mb-16 px-2">
                         <button
-                            onClick={scrollToContact}
+                            onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSerSnWp4zdUKhZDqv_hK7muhKeebb7SHb2kR0oUVNJewElGjQ/viewform?usp=dialog', '_blank')}
                             className="btn-primary flex items-center justify-center gap-2 group bg-white text-blue-600 hover:bg-blue-50 text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4"
                         >
                             <span>Request Consultation</span>

@@ -59,7 +59,7 @@ const Products = () => {
                                 safety, and compliance for your business needs.
                             </p>
                             <button
-                                onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSerSnWp4zdUKhZDqv_hK7muhKeebb7SHb2kR0oUVNJewElGjQ/viewform?usp=dialog', '_blank')}
                                 className="btn-primary"
                             >
                                 Inquire About Products

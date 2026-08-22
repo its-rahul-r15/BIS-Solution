@@ -21,7 +21,7 @@ const Footer = () => {
                     {/* Company Info */}
                     <div>
                         <img
-                            src="/logo.jpeg"
+                            src="/logo1.jpeg"
                             alt={companyInfo.name}
                             className="h-16 w-auto mb-4"
                         />

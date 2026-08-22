@@ -41,8 +41,8 @@ const Header = () => {
     };
 
     const navLinks = [
-        { name: 'Home', section: 'home' },
-        { name: 'About', section: 'about' },
+        { name: 'Home', path: '/' },
+        { name: 'About', path: '/about' },
         { name: 'Products', section: 'products' },
         { name: 'Contact', section: 'contact' },
     ];
@@ -64,20 +64,30 @@ const Header = () => {
                             className="h-12 w-auto"
                         />
                         <div className="hidden md:block">
-                            <span className="text-xl font-bold text-primary-700">{companyInfo.name}</span>
+                            <span className="text-xl font-serif font-bold text-[#0F1B2D] tracking-tight">{companyInfo.name}</span>
                         </div>
                     </Link>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center gap-8">
                         {navLinks.map((link) => (
-                            <button
-                                key={link.name}
-                                onClick={() => scrollToSection(link.section)}
-                                className="text-gray-700 hover:text-primary-600 font-medium transition"
-                            >
-                                {link.name}
-                            </button>
+                            link.path ? (
+                                <Link
+                                    key={link.name}
+                                    to={link.path}
+                                    className="text-[#0F1B2D] hover:text-[#B08D57] font-medium text-sm transition"
+                                >
+                                    {link.name}
+                                </Link>
+                            ) : (
+                                <button
+                                    key={link.name}
+                                    onClick={() => scrollToSection(link.section)}
+                                    className="text-[#0F1B2D] hover:text-[#B08D57] font-medium text-sm transition"
+                                >
+                                    {link.name}
+                                </button>
+                            )
                         ))}
 
                         {/* Services Dropdown */}
@@ -88,7 +98,7 @@ const Header = () => {
                         >
                             <button
                                 onClick={() => scrollToSection('services')}
-                                className="text-gray-700 hover:text-primary-600 font-medium transition flex items-center gap-1"
+                                className="text-[#0F1B2D] hover:text-[#B08D57] font-medium text-sm transition flex items-center gap-1"
                             >
                                 Services
                                 <FaChevronDown className="text-xs" />
@@ -96,15 +106,15 @@ const Header = () => {
 
                             {/* Dropdown Menu */}
                             {isServicesDropdownOpen && (
-                                <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-xl rounded-lg py-3 z-50">
+                                <div className="absolute top-full left-0 mt-2 w-80 md:w-96 bg-white shadow-2xl py-2 z-50 max-h-96 overflow-y-auto border-t-2 border-[#B08D57] divide-y divide-slate-50">
                                     {services.map((service) => (
                                         <Link
                                             key={service.id}
                                             to={`/services/${service.slug}`}
-                                            className="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary-600 transition"
+                                            className="block px-5 py-2.5 text-[#0F1B2D] hover:bg-[#F7F5F0] hover:text-[#B08D57] transition"
                                             onClick={() => setIsServicesDropdownOpen(false)}
                                         >
-                                            <div className="font-medium">{service.title}</div>
+                                            <div className="font-medium text-xs uppercase tracking-wider">{service.title}</div>
                                         </Link>
                                     ))}
                                 </div>
@@ -113,7 +123,7 @@ const Header = () => {
 
                         <button
                             onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSerSnWp4zdUKhZDqv_hK7muhKeebb7SHb2kR0oUVNJewElGjQ/viewform?usp=dialog', '_blank')}
-                            className="btn-primary"
+                            className="bg-[#B08D57] hover:bg-[#997948] text-white font-semibold text-xs uppercase tracking-[0.1em] px-6 py-3 transition duration-300 shadow-md"
                         >
                             Get Started
                         </button>
@@ -135,13 +145,24 @@ const Header = () => {
                     <div className="container mx-auto px-4 py-6">
                         <nav className="flex flex-col gap-4">
                             {navLinks.map((link) => (
-                                <button
-                                    key={link.name}
-                                    onClick={() => scrollToSection(link.section)}
-                                    className="text-left text-gray-700 hover:text-primary-600 font-medium py-2 transition"
-                                >
-                                    {link.name}
-                                </button>
+                                link.path ? (
+                                    <Link
+                                        key={link.name}
+                                        to={link.path}
+                                        className="text-left text-gray-700 hover:text-primary-600 font-medium py-2 transition"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                ) : (
+                                    <button
+                                        key={link.name}
+                                        onClick={() => scrollToSection(link.section)}
+                                        className="text-left text-gray-700 hover:text-primary-600 font-medium py-2 transition"
+                                    >
+                                        {link.name}
+                                    </button>
+                                )
                             ))}
 
                             {/* Mobile Services Dropdown */}
@@ -155,12 +176,12 @@ const Header = () => {
                                 </button>
 
                                 {isServicesDropdownOpen && (
-                                    <div className="ml-4 mt-2 space-y-2">
+                                    <div className="ml-4 mt-2 space-y-1 max-h-64 overflow-y-auto pr-2 border-l-2 border-primary-200 pl-3">
                                         {services.map((service) => (
                                             <Link
                                                 key={service.id}
                                                 to={`/services/${service.slug}`}
-                                                className="block py-2 text-sm text-gray-600 hover:text-primary-600 transition"
+                                                className="block py-1.5 text-xs text-gray-600 hover:text-primary-600 transition"
                                                 onClick={() => {
                                                     setIsMobileMenuOpen(false);
                                                     setIsServicesDropdownOpen(false);

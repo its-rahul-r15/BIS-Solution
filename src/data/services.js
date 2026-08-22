@@ -272,7 +272,333 @@ These certifications ensure that industries adopt pollution control measures and
             { title: 'Compliance Monitoring', description: 'Regular monitoring and renewal of consent as required' },
         ],
     },
+    {
+        id: 9,
+        slug: 'petrol-pump-loi',
+        title: 'Petrol Pump LOI & License Consultation',
+        description: 'End-to-end guidance and assistance for Letter of Intent (LOI) processing, site clearance, and retail outlet setup for Petrol Pumps.',
+        icon: '/images/services/isi.webp',
+        details: 'Complete consultation for OMC retail outlet allocation, land verification, NOC clearances, and petroleum license approval.',
+        fullDescription: 'Acquiring a Petrol Pump Letter of Intent (LOI) and retail outlet license involves complex regulatory approvals from Oil Marketing Companies (IOCL, BPCL, HPCL, Nayara, etc.) and multiple government authorities.',
+        introduction: `Setting up a retail petroleum outlet requires navigating stringent selection processes, land evaluation norms, and obtaining No Objection Certificates (NOCs) from various statutory bodies including District Magistrates, Fire Departments, National Highways, and Pollution Control Boards.
+
+Our expert consultation team guides prospective petrol pump dealers through every step — from initial application and OMC tender submissions to site feasibility, LOI issuance, NOC procurement, and final Explosives (PESO) license grant.`,
+        benefits: [
+            { title: 'Seamless LOI Procurement', description: 'Expert assistance in fulfilling OMC requirements and securing Letter of Intent.' },
+            { title: 'Multi-Department NOCs', description: 'Assistance in obtaining clearance from Revenue, Highways, Fire, and PWD departments.' },
+            { title: 'PESO License Compliance', description: 'Guidance for Petroleum & Explosives Safety Organization (PESO) layout and operational permits.' },
+            { title: 'Site Feasibility Audit', description: 'Verification of land dimensions, frontage, and road access as per OMC guidelines.' },
+        ],
+        documents: [
+            'Proof of land ownership / 19-year lease deed',
+            'Site layout plan approved by qualified architect',
+            'Revenue department Khasra/Khatauni documents & Title Deed',
+            'NOC from District Magistrate (DM/Collector)',
+            'NOC from National/State Highway Authorities (NHAI/PWD)',
+            'Fire Safety NOC & Environment Clearance',
+            'PESO (Petroleum and Explosives Safety Organization) approval drawings',
+        ],
+        process: [
+            { title: 'Land & Eligibility Assessment', description: 'Evaluate site suitability, frontage, and OMC tender criteria.' },
+            { title: 'OMC Application & Selection', description: 'Draft and submit retail outlet application during OMC advertisement call.' },
+            { title: 'LOI Grant & Site Verification', description: 'Obtain Letter of Intent following field verification by OMC officials.' },
+            { title: 'Statutory NOC Clearances', description: 'Procure mandatory NOCs from DM, NHAI, Fire, and Pollution Control Board.' },
+            { title: 'PESO Approval & Commissioning', description: 'Secure Explosives license, complete infrastructure setup, and commission pump.' },
+        ],
+    },
+    {
+        id: 10,
+        slug: 'bio-medical-waste-authorisation',
+        title: 'Bio Medical Waste Authorisation',
+        description: 'Mandatory authorization for healthcare facilities, clinics, labs, and biomedical waste handlers under Bio-Medical Waste Management Rules.',
+        icon: '/images/services/isi.webp',
+        details: 'Complete assistance for State Pollution Control Board (SPCB/PCC) biomedical waste authorization and annual filings.',
+        fullDescription: 'Bio-Medical Waste (BMW) Authorization is compulsory for all Occupiers of healthcare facilities (hospitals, nursing homes, clinics, dispensaries, veterinary institutions, blood banks, laboratories) and Common Bio-Medical Waste Treatment Facilities (CBMWTF).',
+        introduction: `The Bio-Medical Waste Management Rules, 2016 require every healthcare establishment that generates, collects, receives, stores, transports, treats, disposes, or handles biomedical waste in any form to obtain authorization from the concerned State Pollution Control Board or Pollution Control Committee.
+
+Proper management of biomedical waste prevents health hazards and environmental contamination. We provide comprehensive advisory, documentation, and licensing services to ensure your facility achieves 100% statutory compliance.`,
+        benefits: [
+            { title: 'Mandatory Legal Compliance', description: 'Avoid heavy penalties and closure notices under Environmental Protection Act.' },
+            { title: 'Streamlined Agreement', description: 'Facilitates tie-ups with authorized Common Bio-Medical Waste Treatment Facilities (CBMWTF).' },
+            { title: 'Categorized Waste Audit', description: 'Guidance on color-coded segregation (Yellow, Red, White, Blue) and storage standards.' },
+            { title: 'Hassle-free Annual Returns', description: 'Support for mandatory Form IV annual report submissions.' },
+        ],
+        documents: [
+            'Proof of healthcare establishment registration / license',
+            'Agreement copy with CBMWTF operator',
+            'Layout plan of healthcare facility showing waste storage area',
+            'Details of bed capacity and daily biomedical waste generation estimate',
+            'NOC / CTE / CTO copy from State Pollution Control Board',
+            'Self-declaration & Authorization application form',
+            'Water & Electricity bill proof',
+        ],
+        process: [
+            { title: 'Facility Audit & Categorization', description: 'Assess waste generation, bed strength, and segregation protocol.' },
+            { title: 'CBMWTF Tie-Up', description: 'Execute agreement with regional authorized biomedical waste operator.' },
+            { title: 'Application Preparation', description: 'Prepare technical dossier and Form II authorization application.' },
+            { title: 'SPCB Submission & Review', description: 'Submit portal application to State Pollution Control Board.' },
+            { title: 'Inspection & Authorization Grant', description: 'Facilitate official inspection and secure Bio-Medical Waste Authorization certificate.' },
+        ],
+    },
+    {
+        id: 11,
+        slug: 'bee-certification',
+        title: 'BEE Star Labeling Certification',
+        description: 'Bureau of Energy Efficiency (BEE) star rating certification for electrical appliances, equipment, and industrial machinery.',
+        icon: '/images/services/fmcs.webp',
+        details: 'Standards & Labeling (S&L) scheme registration, testing coordination, and star rating approval.',
+        fullDescription: 'BEE Star Labeling Certification, administered by the Bureau of Energy Efficiency under the Ministry of Power, rates products based on energy performance on a scale of 1 to 5 stars.',
+        introduction: `The Bureau of Energy Efficiency (BEE) Standards and Labeling (S&L) scheme mandates or encourages manufacturers and importers to certify the energy efficiency of electrical appliances sold in India.
+
+Products like ACs, refrigerators, transformers, LED lamps, ceiling fans, and pumps require mandatory or voluntary BEE star ratings. A higher star rating indicates higher energy efficiency, giving your brand a distinct competitive advantage in the Indian marketplace.`,
+        benefits: [
+            { title: 'Market Acceptance', description: 'Mandatory requirement for selling specified electrical items in India.' },
+            { title: 'Consumer Preference', description: 'High star ratings attract energy-conscious buyers.' },
+            { title: 'Energy Efficiency Standard', description: 'Demonstrates environmental commitment and product superiority.' },
+            { title: 'Brand Trust', description: 'Official Ministry of Power logo builds strong consumer confidence.' },
+        ],
+        documents: [
+            'Company Incorporation certificate & GST registration',
+            'Trademark registration certificate',
+            'Product test reports from NABL-accredited laboratory',
+            'User manual and technical specification datasheet',
+            'BEE portal user registration details & sample photos',
+            'Label design mock-up complying with BEE guidelines',
+        ],
+        process: [
+            { title: 'Brand & Portal Registration', description: 'Register manufacturing company on BEE portal as a brand owner.' },
+            { title: 'Product Sample Testing', description: 'Send product sample to NABL-accredited lab for energy performance test.' },
+            { title: 'Model Application', description: 'File model registration application on BEE portal with test report.' },
+            { title: 'Document Verification', description: 'BEE officials scrutinize test results and label specs.' },
+            { title: 'Star Label Approval', description: 'Grant of BEE Star Labeling approval for authorized usage on product.' },
+        ],
+    },
+    {
+        id: 12,
+        slug: 'epr-certification',
+        title: 'EPR Registration & Certification',
+        description: 'Extended Producer Responsibility (EPR) compliance for Plastic Packaging, E-Waste, Waste Tyres, and Batteries under CPCB.',
+        icon: '/images/services/Bis registration.webp',
+        details: 'End-to-end EPR target fulfillment, recycling credit transfers, and CPCB portal registration for PIBOs.',
+        fullDescription: 'Extended Producer Responsibility (EPR) makes Producers, Importers, and Brand Owners (PIBOs) accountable for the post-consumer management of plastic packaging, electronic waste, waste tyres, and batteries.',
+        introduction: `Under Environmental Protection Rules, any business importing or manufacturing products wrapped in plastic packaging, electrical/electronic equipment, batteries, or tyres must register on the Central Pollution Control Board (CPCB) EPR portal.
+
+Failure to obtain EPR registration leads to severe environmental compensation penalties and import consignment holds. We offer end-to-end EPR consultation, target computation, recycler tie-ups, and annual return filing.`,
+        benefits: [
+            { title: 'Customs Import Clearance', description: 'Prevent customs detention of imported goods requiring EPR certificate.' },
+            { title: 'Legal Immunity', description: 'Protection against environmental compensation fees and regulatory action.' },
+            { title: 'Recycling Target Fulfillment', description: 'Smooth credit purchase and certificate transfer via authorized recyclers.' },
+            { title: 'Corporate Sustainability', description: 'Position your business as an environmentally responsible brand.' },
+        ],
+        documents: [
+            'IEC (Import Export Code) certificate',
+            'GST certificate & PAN card of company',
+            'DIC / MSME registration or Factory license',
+            'State Pollution Control Board CTE / CTO certificate',
+            'Quantified details of plastic packaging / e-waste / battery placed on market (last 3 years)',
+            'Authorized signee authorization letter',
+        ],
+        process: [
+            { title: 'EPR Category Identification', description: 'Determine applicable category (Plastic, E-Waste, Battery, Tyre PIBO).' },
+            { title: 'Data Compilation & Target Calculation', description: 'Calculate minimum recycling obligations based on sales volume.' },
+            { title: 'CPCB Portal Submission', description: 'Submit digital application on CPCB EPR portal with required fees.' },
+            { title: 'Clarification & Certificate Grant', description: 'Address regulatory queries and obtain CPCB EPR Registration Certificate.' },
+            { title: 'Credit Offsetting & Annual Return', description: 'Procure EPR recycling credits and file mandatory annual returns.' },
+        ],
+    },
+    {
+        id: 13,
+        slug: 'ngo-registration',
+        title: 'NGO Registration & Compliance',
+        description: 'End-to-end registration for Trust, Society, Section 8 Company, NGO Darpan (NITI Aayog), 12A & 80G tax exemptions.',
+        icon: '/images/services/msme.webp',
+        details: 'Complete legal structure setup, NGO Darpan portal enrollment, CSR-1 registration, and 12A/80G certification.',
+        fullDescription: 'NGO Registration establishes a non-profit organization as a recognized legal entity capable of receiving government grants, corporate CSR funding, and tax-exempt donations.',
+        introduction: `Starting a non-profit organization in India requires choosing the appropriate legal structure — Trust, Society, or Section 8 Company — followed by registration on NITI Aayog's NGO Darpan portal and obtaining 12A & 80G tax benefits under the Income Tax Act.
+
+Whether your mission focuses on social welfare, education, environmental protection, or healthcare, our expert consultants manage the complete registration journey and post-incorporation tax compliance.`,
+        benefits: [
+            { title: 'Tax Benefits (12A & 80G)', description: 'Provides 100% tax exemption on income and 50% tax deductions to donors.' },
+            { title: 'CSR Grant Eligibility', description: 'Mandatory CSR-1 registration allows receiving Corporate Social Responsibility funds.' },
+            { title: 'Government Funding', description: 'NGO Darpan portal registration opens access to government grants and schemes.' },
+            { title: 'Institutional Credibility', description: 'Formal registration enhances donor confidence and public trust.' },
+        ],
+        documents: [
+            'PAN card & Aadhar card of all founders/trustees/directors',
+            'Registered office address proof (utility bill & NOC)',
+            'Memorandum of Association (MoA) & Articles of Association (AoA) or Trust Deed',
+            'Digital Signature Certificates (DSC) for Section 8 Company',
+            'Passport size photographs of office bearers',
+        ],
+        process: [
+            { title: 'Entity Structure Selection', description: 'Select between Public Charitable Trust, Society, or Section 8 Company.' },
+            { title: 'Drafting & Sub-Registrar Filing', description: 'Draft Memorandum & Trust Deed/Rules and register at Sub-Registrar / ROC.' },
+            { title: 'NGO Darpan Enrollment', description: 'Register on NITI Aayog portal to obtain unique NGO Darpan ID.' },
+            { title: '12A & 80G Tax Registration', description: 'Apply to Income Tax Department for provisional 12A and 80G approvals.' },
+            { title: 'CSR-1 Registration', description: 'File Form CSR-1 with MCA for corporate grant eligibility.' },
+        ],
+    },
+    {
+        id: 14,
+        slug: 'fire-noc-certification',
+        title: 'Fire Safety NOC',
+        description: 'Fire No Objection Certificate (NOC) issuance and renewal from State Fire & Emergency Services for commercial & industrial buildings.',
+        icon: '/images/services/hall.webp',
+        details: 'Fire safety plan audit, equipment compliance, on-site inspection coordination, and Fire NOC approval.',
+        fullDescription: 'Fire NOC (No Objection Certificate) is a mandatory safety certificate issued by the State Fire Services Department verifying that a building conforms to prescribed fire safety standards and National Building Code (NBC) guidelines.',
+        introduction: `A Fire NOC is mandatory for high-rise residential buildings, commercial complexes, hospitals, educational institutions, hotels, shopping malls, and industrial units. It ensures that the building is equipped with operational fire prevention and fighting systems.
+
+Without a valid Fire NOC, commercial establishments cannot obtain trade licenses, occupancy certificates, or environmental clearances. We provide turnkey guidance for initial Fire NOC procurement, building safety audits, and timely renewals.`,
+        benefits: [
+            { title: 'Statutory Requirement', description: 'Compulsory for trade license, occupancy certificate, and industrial operations.' },
+            { title: 'Life & Property Safety', description: 'Ensures operational readiness against fire hazards.' },
+            { title: 'Insurance Compliance', description: 'Essential for claiming commercial fire insurance benefits.' },
+            { title: 'Avoid Penalties', description: 'Prevents building seal orders and heavy administrative fines.' },
+        ],
+        documents: [
+            'Building plan layout approved by local municipal authority',
+            'Architectural elevation & sectional drawings',
+            'Fire fighting equipment installation report & vendor certificate',
+            'Site ownership proof / lease agreement',
+            'Building completion / occupancy certificate copy',
+            'Electrical safety audit report',
+        ],
+        process: [
+            { title: 'Building Safety Audit', description: 'Inspect site against National Building Code (NBC) fire safety norms.' },
+            { title: 'Fire Plan Submission', description: 'Submit building layout and fire safety plan to Fire Department.' },
+            { title: 'Provisional NOC Grant', description: 'Obtain provisional Fire NOC prior to equipment setup.' },
+            { title: 'On-Site Verification Inspection', description: 'Fire officers inspect alarms, sprinklers, hydrants, and emergency exits.' },
+            { title: 'Final Fire NOC Issuance', description: 'Receive final Fire NOC certificate with annual/periodic validity.' },
+        ],
+    },
+    {
+        id: 15,
+        slug: 'gun-license-consultation',
+        title: 'Gun License Consultation',
+        description: 'Expert consultation and documentation assistance for acquiring personal security & sports arms/gun licenses under the Arms Act.',
+        icon: '/images/services/tm.webp',
+        details: 'Application preparation, threat assessment documentation, police verification advisory, and licensing authority representation.',
+        fullDescription: 'Acquiring an Arms License (Gun License) in India is governed by the stringent Arms Act, 1959 and Arms Rules, 2016 administered by District Magistrates (DM) / Licensing Authorities.',
+        introduction: `Obtaining an arms license in India requires demonstrating a legitimate need such as grave personal threat, protection of high-value assets, self-defense, or sports shooting. The process demands meticulous documentation, background verifications, and multi-agency police clearance reports.
+
+Our gun license consultation team provides transparent, lawful advisory services to help eligible citizens, business owners, security agencies, and sports shooters navigate the complex application procedure smoothly.`,
+        benefits: [
+            { title: 'Legal Expertise', description: 'Comprehensive knowledge of Arms Act, 2016 rules and DM criteria.' },
+            { title: 'Meticulous Documentation', description: 'Proper compilation of threat justification and identity dossiers.' },
+            { title: 'Police Verification Guidance', description: 'Step-by-step guidance through local police station and IB verifications.' },
+            { title: 'Smooth Representation', description: 'Assistance in responding to licensing authority queries during interview.' },
+        ],
+        documents: [
+            'Identity & Residence Proof (Aadhaar, Passport, Voter ID)',
+            'Proof of Business / Profession & Income Tax Returns (ITR last 3 years)',
+            'Written justification statement detailing threat perception / self-defense need',
+            'Medical fitness certificate from registered MBBS doctor (Form S1)',
+            'Firearm handling training certificate from recognized shooting range',
+            'No Objections from family members / NOC from employer (if applicable)',
+        ],
+        process: [
+            { title: 'Eligibility & Need Assessment', description: 'Review applicant background and threat perception criteria.' },
+            { title: 'Dossier Preparation', description: 'Compile Form A-1 application with medical report and threat proof.' },
+            { title: 'Submission to District Magistrate', description: 'Submit application to DM Office / Licensing Authority portal.' },
+            { title: 'Police & Intelligence Verification', description: 'Coordinate background checks across local police station & CID/IB.' },
+            { title: 'DM Hearing & License Grant', description: 'Attend personal hearing with Licensing Authority for final license issuance.' },
+        ],
+    },
+    {
+        id: 16,
+        slug: 'water-plant-machinery-supply',
+        title: 'Package Drinking Water Plant Machinery Supply',
+        description: 'Turnkey supply, setup, and commissioning of high-grade processing machinery for packaged mineral water plants.',
+        icon: '/images/services/isi.webp',
+        details: 'Complete Reverse Osmosis (RO) plants, UV/Ozone sterilizers, automatic pet blowing, washing, filling, and cap sealing machinery.',
+        fullDescription: 'Starting a BIS-approved (IS 14543 / IS 10500) packaged drinking water manufacturing plant requires state-of-the-art water purification and hygienic automatic packaging machinery.',
+        introduction: `We specialize in the end-to-end supply, installation, and commissioning of high-efficiency Package Drinking Water Plant Machinery. From raw water treatment to final bottle packaging, our machines conform to Bureau of Indian Standards (BIS) and FSSAI guidelines.
+
+Whether setting up a 1,000 LPH small unit or a 10,000 LPH fully automated mineral water plant, we deliver heavy-duty stainless steel (SS 316) RO systems, pouch/jar filling lines, automatic pet blowing machines, and lab testing apparatus.`,
+        benefits: [
+            { title: 'BIS & FSSAI Compliant', description: 'Machinery built to meet exact IS 14543 packaged drinking water standards.' },
+            { title: 'Turnkey Execution', description: 'From raw water analysis and civil layout to machine setup and testing.' },
+            { title: 'High Yield & Efficiency', description: 'Advanced membrane filtration with low energy consumption and minimal water reject.' },
+            { title: 'After-Sales Support', description: 'AMC services, spare parts availability, and operator training included.' },
+        ],
+        documents: [
+            'Water source report & raw water lab test analysis',
+            'Factory layout plan & power availability details',
+            'Machine capacity requirement & product line selection',
+            'BIS & FSSAI registration plan',
+        ],
+        process: [
+            { title: 'Water Quality Analysis', description: 'Test raw water source (TDS, hardness, microbiological parameters).' },
+            { title: 'Customized Plant Design', description: 'Design RO purification stages and bottle line footprint based on output capacity.' },
+            { title: 'Machinery Manufacturing & Supply', description: 'Supply SS 316 RO units, Micron filters, UV/Ozone systems, and filling lines.' },
+            { title: 'Erection & Commissioning', description: 'On-site installation, piping work, electrical hookup, and system calibration.' },
+            { title: 'BIS Testing & Handover', description: 'Conduct trial run, verify product water standards, and hand over operational plant.' },
+        ],
+    },
+    {
+        id: 17,
+        slug: 'water-flow-meter-piezometer-supply',
+        title: 'Water Flow Meter & Piezometer Supply',
+        description: 'Supply and installation of CGWA-mandatory telemetric digital water flow meters, piezometers, and digital water level recorders (DWLR).',
+        icon: '/images/services/hall.webp',
+        details: 'CGWA compliant electromagnetic flow meters, telemetry data loggers, piezometer tube setup, and calibration certificates.',
+        fullDescription: 'Central Ground Water Authority (CGWA) guidelines strictly mandate the installation of telemetry-enabled digital water flow meters and piezometers with Digital Water Level Recorders (DWLR) for groundwater abstraction units.',
+        introduction: `Under CGWA and State Ground Water regulations, all industrial, commercial, infrastructure, and mining projects extracting groundwater must equip borewells with CGWA-approved electromagnetic flow meters and piezometers integrated with IoT telemetry data loggers.
+
+We supply, install, and calibrate top-grade telemetry water flow meters and piezometers, complete with NABL laboratory calibration certificates and direct server data transmission to ensure 100% CGWA NOC compliance.`,
+        benefits: [
+            { title: 'Mandatory CGWA Compliance', description: 'Fulfills essential NOC conditions for ground water extraction.' },
+            { title: 'IoT Telemetric Integration', description: 'Automatic real-time data transmission to CGWA cloud servers.' },
+            { title: 'NABL Calibrated', description: 'High precision electromagnetic and ultrasonic sensors with test certificates.' },
+            { title: 'Durable & Weatherproof', description: 'IP68 waterproof sensors engineered for industrial borewell environments.' },
+        ],
+        documents: [
+            'CGWA NOC copy / ground water application number',
+            'Borewell specifications (depth, casing diameter, pump capacity)',
+            'Site location GPS coordinates',
+            'Electrical & internet/GSM connectivity details',
+        ],
+        process: [
+            { title: 'Site Inspection & Spec Selection', description: 'Determine borewell pipe size, flow rate, and piezometer depth.' },
+            { title: 'Equipment Supply', description: 'Deliver NABL calibrated electromagnetic flow meter, DWLR piezometer, and IoT telemetry unit.' },
+            { title: 'On-Site Installation', description: 'Install flow meter on pipeline and lower piezometer sensor into monitoring well.' },
+            { title: 'Telemetry Configuration', description: 'Configure SIM/GSM module for automated data upload to CGWA portal.' },
+            { title: 'Calibration Certificate & Report', description: 'Provide NABL calibration certificate and submission report for CGWA NOC verification.' },
+        ],
+    },
+    {
+        id: 18,
+        slug: 'etp-stp-plant-supply-setup',
+        title: 'ETP & STP Plant Supply & Setup',
+        description: 'Turnkey supply, installation, and maintenance of Effluent Treatment Plants (ETP) and Sewage Treatment Plants (STP) for commercial & industrial facilities.',
+        icon: '/images/services/isi.webp',
+        details: 'Custom engineered MBBR, SBR, MBR technology plants ensuring complete SPCB pollution board compliance.',
+        fullDescription: 'Effluent Treatment Plants (ETP) and Sewage Treatment Plants (STP) are essential environmental engineering systems designed to treat industrial wastewater and domestic sewage to meet State Pollution Control Board discharge norms.',
+        introduction: `Industrial manufacturing, textile, chemical, pharmaceutical, food processing units, residential townships, and commercial complexes generate significant wastewater that must be treated before discharge or reuse.
+
+We offer complete EPC (Engineering, Procurement, and Construction) services for ETP and STP plants utilizing modern technologies like Moving Bed Biofilm Reactor (MBBR), Sequential Batch Reactor (SBR), and Membrane Bioreactor (MBR). Our zero liquid discharge (ZLD) designs ensure strict adherence to SPCB and CPCB environmental norms.`,
+        benefits: [
+            { title: 'SPCB / CPCB Compliance', description: 'Guarantees outlet water quality meets statutory discharge and reuse norms.' },
+            { title: 'Water Reuse & Cost Savings', description: 'Treated water can be recycled for gardening, flushing, cooling towers, and industrial processes.' },
+            { title: 'Advanced Eco Technology', description: 'Compact footprint designs with automated control systems and low sludge generation.' },
+            { title: 'Turnkey Execution & O&M', description: 'From civil engineering and piping to commissioning and monthly Operation & Maintenance.' },
+        ],
+        documents: [
+            'Raw wastewater inlet quality test report (BOD, COD, TSS, pH, Oil & Grease)',
+            'Daily wastewater generation volume (KLD / LPD)',
+            'Site layout plan & space availability for plant construction',
+            'State Pollution Control Board CTE / CTO requirements',
+        ],
+        process: [
+            { title: 'Wastewater Sampling & Process Design', description: 'Analyze effluent characteristics and determine design capacity (KLD).' },
+            { title: 'Engineering & Fabrication', description: 'Fabricate reactor tanks, aeration blowers, pumps, clarifiers, and filter units.' },
+            { title: 'On-Site Civil & Mechanical Erection', description: 'Construct tanks, assemble piping networks, pumps, electrical control panels, and dosing systems.' },
+            { title: 'Bacterial Culture Inoculation & Trial', description: 'Develop bio-mass culture, conduct trial runs, and calibrate treatment efficiency.' },
+            { title: 'SPCB Outlet Certification & Handover', description: 'Conduct treated water testing, obtain SPCB compliance verification, and handover to client.' },
+        ],
+    },
 ];
+
 
 export const products = [
     {

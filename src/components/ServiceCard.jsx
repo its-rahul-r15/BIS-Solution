@@ -3,36 +3,36 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const ServiceCard = ({ service, index }) => {
     return (
-        <Link to={`/services/${service.slug}`} className="card card-hover group block"
-            style={{ animationDelay: `${index * 0.1}s` }}
+        <Link
+            to={`/services/${service.slug}`}
+            className="group block bg-white p-7 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl relative flex flex-col justify-between"
+            style={{ animationDelay: `${index * 0.05}s` }}
         >
-            {/* Image */}
-            <div className="relative h-48 overflow-hidden">
-                <img
-                    src={service.icon}
-                    alt={service.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-            </div>
+            <div>
+                {/* Top Number / Category accent */}
+                <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[#8A7350]">
+                        Service {index + 1 < 10 ? `0${index + 1}` : index + 1}
+                    </span>
+                    <span className="w-6 h-[1.5px] bg-[#B08D57]/40 group-hover:w-10 group-hover:bg-[#B08D57] transition-all duration-300"></span>
+                </div>
 
-            {/* Content */}
-            <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
+                {/* Service Title */}
+                <h3 className="font-serif text-xl md:text-2xl font-normal text-[#0F1B2D] mb-3 group-hover:text-[#B08D57] transition-colors leading-snug">
                     {service.title}
                 </h3>
-                <p className="text-gray-600 mb-4 line-clamp-3">{service.description}</p>
-                <p className="text-sm text-gray-500 mb-4">{service.details}</p>
 
-                <div className="flex items-center gap-2 text-primary-600 font-semibold group-hover:gap-3 transition-all">
-                    <span>Learn More</span>
-                    <FaArrowRight className="text-sm" />
-                </div>
+                {/* Description */}
+                <p className="text-slate-600 text-sm leading-relaxed mb-6 line-clamp-3">
+                    {service.description}
+                </p>
             </div>
 
-            {/* Accent Line */}
-            <div className="h-1 w-0 bg-gradient-to-r from-primary-600 to-secondary-600 group-hover:w-full transition-all duration-500"></div>
+            {/* Read More Link */}
+            <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.1em] text-[#0F1B2D] group-hover:text-[#B08D57] transition-colors">
+                <span>View Details</span>
+                <FaArrowRight className="text-xs text-[#B08D57] group-hover:translate-x-1 transition-transform" />
+            </div>
         </Link>
     );
 };

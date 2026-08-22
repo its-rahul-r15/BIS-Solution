@@ -1,101 +1,107 @@
-import { FaArrowRight, FaCheckCircle } from 'react-icons/fa';
+import { FaArrowRight, FaCheckCircle, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { companyInfo } from '../data/companyInfo';
 
 const Hero = () => {
-    const scrollToContact = () => {
-        const element = document.getElementById('contact');
+    const scrollToServices = () => {
+        const element = document.getElementById('services');
         if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     };
 
     const features = [
-        'Fast & Reliable Service',
-        'Expert Guidance',
-        'Affordable Pricing',
-        '1000+ Satisfied Clients',
+        'Pan-India Execution',
+        'Expert Consultation',
+        'Transparent Process',
+        '500+ Satisfied Clients',
     ];
 
     return (
-        <section id="home" className="relative min-h-screen flex items-center pt-20 pb-12 md:pt-24 md:pb-16">
-            {/* Background Image */}
+        <section id="home" className="relative min-h-[90vh] flex items-center pt-28 pb-16 md:pt-36 md:pb-24 bg-[#0F1B2D] text-white overflow-hidden">
+            {/* Background Texture Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
                     src="/hero-bg.webp"
                     alt="BIS Solutions Background"
                     loading="eager"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover opacity-15 mix-blend-overlay"
                 />
-                {/* Blue overlay with reduced opacity */}
-                <div className="absolute inset-0 bg-blue-600/85"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0F1B2D]/90 via-[#0F1B2D] to-[#0F1B2D]"></div>
+                <div className="absolute top-1/4 right-10 w-96 h-96 bg-[#B08D57]/10 rounded-full blur-3xl pointer-events-none"></div>
             </div>
 
             {/* Content */}
-            <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 max-w-7xl relative z-10">
-                <div className="max-w-6xl mx-auto text-center">
-                    {/* Badge */}
-                    <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full mb-6 sm:mb-10 mt-10">
-                        <FaCheckCircle className="text-base sm:text-lg" />
-                        <span className="text-sm sm:text-base font-medium tracking-wide">India's Trusted Certification Partner</span>
+            <div className="container mx-auto px-6 md:px-10 lg:px-16 max-w-6xl relative z-10">
+                <div className="max-w-4xl">
+                    {/* Category / Badge */}
+                    <div className="flex items-center gap-3 mb-6">
+                        <span className="w-10 h-[2px] bg-[#B08D57]" />
+                        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#B08D57]">
+                            India's Premier Regulatory & Compliance Consultancy
+                        </span>
                     </div>
 
-                    {/* Main Heading */}
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 sm:mb-8 md:mb-10 leading-tight tracking-tight px-2">
+                    {/* Main Serif Heading */}
+                    <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] tracking-tight mb-8 text-white">
                         {companyInfo.tagline}
                     </h1>
 
-                    {/* Subheading */}
-                    <p className="text-base sm:text-lg md:text-xl lg:text-xl text-white/95 mb-8 sm:mb-12 md:mb-14 max-w-4xl mx-auto leading-relaxed font-light px-2">
+                    {/* Subtitle */}
+                    <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-10 max-w-3xl">
                         {companyInfo.description}
                     </p>
 
-                    {/* Features List */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-8 sm:mb-12 max-w-3xl mx-auto px-2">
+                    {/* Key Highlights */}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12 max-w-3xl">
                         {features.map((feature, index) => (
-                            <div key={index} className="flex items-center gap-2 text-white justify-center">
-                                <FaCheckCircle className="text-white flex-shrink-0 text-sm sm:text-base" />
-                                <span className="text-xs sm:text-sm md:text-base">{feature}</span>
+                            <div key={index} className="flex items-center gap-2.5">
+                                <span className="text-[#B08D57] font-bold">—</span>
+                                <span className="text-sm font-medium text-slate-200">{feature}</span>
                             </div>
                         ))}
                     </div>
 
-                    {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center mb-10 sm:mb-14 md:mb-16 px-2">
+                    {/* Call to Action Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4 mb-16">
                         <button
                             onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSerSnWp4zdUKhZDqv_hK7muhKeebb7SHb2kR0oUVNJewElGjQ/viewform?usp=dialog', '_blank')}
-                            className="btn-primary flex items-center justify-center gap-2 group bg-white text-blue-600 hover:bg-blue-50 text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4"
+                            className="inline-flex items-center justify-center gap-3 bg-[#B08D57] hover:bg-[#997948] text-white font-semibold text-base px-8 py-4 transition duration-300 shadow-lg shadow-[#B08D57]/20 group"
                         >
                             <span>Request Consultation</span>
-                            <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
+                            <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
                         </button>
                         <button
-                            onClick={() => document.getElementById('services').scrollIntoView({ behavior: 'smooth' })}
-                            className="btn-secondary border-white text-white hover:bg-white/10 text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4"
+                            onClick={scrollToServices}
+                            className="inline-flex items-center justify-center gap-2 border border-white/25 hover:border-white text-white hover:bg-white/5 font-semibold text-base px-8 py-4 transition duration-300"
                         >
                             Explore Services
                         </button>
                     </div>
 
-                    {/* Contact Info */}
-                    <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 text-white justify-center items-center px-2">
-                        <div className="text-center sm:text-left">
-                            <p className="text-sm sm:text-base text-blue-100 mb-1 sm:mb-2">Call Us Now</p>
-                            <a
-                                href={`tel:+91${companyInfo.phones[0]}`}
-                                className="text-xl sm:text-2xl font-semibold hover:text-blue-100 transition"
-                            >
-                                +91 {companyInfo.phones[0]}
-                            </a>
+                    {/* Quick Contact Specs */}
+                    <div className="pt-8 border-t border-white/10 grid sm:grid-cols-2 gap-6 max-w-2xl">
+                        <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 bg-[#16233A] flex items-center justify-center text-[#B08D57] flex-shrink-0">
+                                <FaPhoneAlt className="text-lg" />
+                            </div>
+                            <div>
+                                <span className="block text-xs uppercase tracking-widest text-slate-400">Direct Consultation</span>
+                                <a href={`tel:+91${companyInfo.phones[0]}`} className="text-lg font-serif text-white hover:text-[#B08D57] transition">
+                                    +91 {companyInfo.phones[0]}
+                                </a>
+                            </div>
                         </div>
-                        <div className="h-auto w-px bg-white/30 hidden sm:block"></div>
-                        <div className="text-center sm:text-left">
-                            <p className="text-sm sm:text-base text-blue-100 mb-1 sm:mb-2">Email Us</p>
-                            <a
-                                href={`mailto:${companyInfo.email}`}
-                                className="text-base sm:text-xl font-semibold hover:text-blue-100 transition break-all"
-                            >
-                                {companyInfo.email}
-                            </a>
+
+                        <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 bg-[#16233A] flex items-center justify-center text-[#B08D57] flex-shrink-0">
+                                <FaEnvelope className="text-lg" />
+                            </div>
+                            <div>
+                                <span className="block text-xs uppercase tracking-widest text-slate-400">Email Inquiry</span>
+                                <a href={`mailto:${companyInfo.email}`} className="text-sm font-medium text-slate-200 hover:text-[#B08D57] transition truncate block max-w-[220px]">
+                                    {companyInfo.email}
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

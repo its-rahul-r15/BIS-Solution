@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import { FaInstagram, FaLinkedin, FaYoutube, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { companyInfo } from '../data/companyInfo';
+import { services } from '../data/services';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -12,7 +14,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-gray-900 text-gray-300">
+        <footer className="bg-[#0F1B2D] text-slate-300 border-t border-[#16233A]">
             {/* Main Footer */}
             <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl py-16 md:py-20">
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12">
@@ -59,7 +61,17 @@ const Footer = () => {
                     <div>
                         <h4 className="text-lg font-bold text-white mb-4">Quick Links</h4>
                         <ul className="space-y-2">
-                            {['Home', 'About', 'Services', 'Products', 'Contact'].map((link) => (
+                            <li>
+                                <Link to="/" className="hover:text-primary-400 transition">
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/about" className="hover:text-primary-400 transition">
+                                    About Us
+                                </Link>
+                            </li>
+                            {['Services', 'Products', 'Contact'].map((link) => (
                                 <li key={link}>
                                     <button
                                         onClick={() => scrollToSection(link.toLowerCase())}
@@ -76,12 +88,13 @@ const Footer = () => {
                     <div>
                         <h4 className="text-lg font-bold text-white mb-4">Our Services</h4>
                         <ul className="space-y-2 text-sm">
-                            <li>ISI Mark Certification</li>
-                            <li>FSSAI Registration</li>
-                            <li>CRS Approval</li>
-                            <li>MSME Registration</li>
-                            <li>GST Registration</li>
-                            <li>CGWA NOC</li>
+                            {services.slice(0, 8).map((srv) => (
+                                <li key={srv.id}>
+                                    <Link to={`/services/${srv.slug}`} className="hover:text-primary-400 transition">
+                                        {srv.title}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
